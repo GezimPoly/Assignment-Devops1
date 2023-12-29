@@ -6,13 +6,13 @@ terraform {
     }
   
   }
-  required_version = "~> 1.6.6" // duhet me kqyre edhe nihere
+  required_version = "~> 1.6.6" 
 }
 
 provider "aws" {
   region = var.aws_region
-  access_key = "AKIA452BZEEUW2ET4BM7"
-  secret_key = "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"
+   access_key = var.aws_access_key
+  secret_key = var.aws_secret_key
 }
 
 //qetu me i majt te gjitha zone qe jane te mundshme mu qas e qat regjion

@@ -60,6 +60,14 @@ variable "private_subnet_cidr_blocks"{
 #     type = string
 #     sensitive = true
 # }
+variable "aws_access_key" {
+  type = string
+  sensitive = true
+}
+variable "aws_secret_key" {
+  type = string
+  sensitive = true
+}
 
 // database master user me rujt ne nje secrete file
 variable "db_username" {
